@@ -1,3 +1,2 @@
-python == 3.10.12
 discord.py == 2.3.2
 python-dotenv version == 1.0.0
