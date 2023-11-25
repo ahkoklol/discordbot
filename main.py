@@ -62,10 +62,12 @@ async def roll(ctx, chosen_number: int):
     last_roll_time = user_last_roll.get(ctx.author.id, datetime.now(timezone.utc) - timedelta(days=1))
     current_time = datetime.now(timezone.utc)
     time_difference = current_time - last_roll_time
+    time_remaining = timedelta(seconds=86400 - time_difference.total_seconds())
+    time_remaining_str = str(time_remaining).split(".")[0]  # Remove the microseconds part
 
     # If less than 24 hours have passed, inform the user and exit the command
     if not is_admin and time_difference.total_seconds() < 86400:
-        await ctx.send(f"You've already rolled in the last 24 hours. Try again later.")
+        await ctx.send(f"You've already rolled in the last 24 hours. You can roll again in: {time_remaining_str}")
         return
 
     # Generate a random number between 0 and the chosen number
