@@ -65,6 +65,22 @@ async def spin(ctx):
     }
 
     await ctx.send(messages[rolled_number])
+
+@client.command()
+async def gamble(ctx):
+
+    # generate a random number between 0 and 100
+    rolled_number = random.randint(0, 100)
+
+    # define usable emojis
+    diceEmoji = discord.utils.get(client.emojis, name='4dicepink')
+    bunnySpinEmoji = discord.utils.get(client.emojis, name='emoji_2')
+
+    if rolled_number <= 60:
+        await ctx.send(f"{diceEmoji} You rolled {rolled_number}! House wins, pay up slave! {diceEmoji}")
+
+    else:
+        await ctx.send(f"{diceEmoji} You rolled {rolled_number}! You win, lucky you! {diceEmoji}")
     
 
 client.run(bot_token)
