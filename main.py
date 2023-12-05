@@ -86,11 +86,11 @@ async def roll(ctx, chosen_number: int):
         30: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***boob pic*** for free! DM me now! {bunnySpinEmoji}",
         40: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***pussy pic*** for free! DM me now! {bunnySpinEmoji}",
         50: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***feet pic*** for free! DM me now! {bunnySpinEmoji}",
-        60: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***gooning pic*** for free! DM me now! {bunnySpinEmoji}"
-        70: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***bathtub pic*** for free! DM me now! {bunnySpinEmoji}"
-        80: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***fishnet pic*** for free! DM me now! {bunnySpinEmoji}"
-        90: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***sexy lingerie pic*** for free! DM me now! {bunnySpinEmoji}"
-        100: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won an ***ass pic*** for free! DM me now! {bunnySpinEmoji}"
+        60: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***gooning pic*** for free! DM me now! {bunnySpinEmoji}",
+        70: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***bathtub pic*** for free! DM me now! {bunnySpinEmoji}",
+        80: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***fishnet pic*** for free! DM me now! {bunnySpinEmoji}",
+        90: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won a ***sexy lingerie pic*** for free! DM me now! {bunnySpinEmoji}",
+        100: f"{catGirlHelloEmoji} WOW! You rolled {rolled_number}! you won an ***ass pic*** for free! DM me now! {bunnySpinEmoji}",
     }
 
     if rolled_number in messages:
